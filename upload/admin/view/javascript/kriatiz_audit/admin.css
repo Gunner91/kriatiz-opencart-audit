@@ -1,0 +1,112 @@
+/* KRIATIZ Аудит — admin */
+.kau { --kau-accent: #4f46e5; --kau-red: #dc2626; --kau-amber: #d97706; --kau-green: #16a34a; --kau-blue: #2563eb; --kau-muted: #64748b; --kau-line: #e2e8f0; }
+.kau .page-header h1 { display: inline-flex; align-items: center; gap: 10px; }
+.kau-logo { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2b1b6b, #6c3bff); color: #fff; font-weight: 700; font-size: 17px; }
+.kau-head-actions { display: flex; gap: 6px; }
+.kau-muted { color: var(--kau-muted); }
+
+/* Головний блок */
+.kau-hero { background: #fff; border: 1px solid var(--kau-line); border-radius: 14px; padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 1px 2px rgba(15, 23, 42, .04); }
+.kau-hero-main { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.kau-rings { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.kau-ring { position: relative; width: 96px; height: 96px; }
+.kau-ring-lg { width: 132px; height: 132px; }
+.kau-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.kau-ring circle { fill: none; stroke-width: 10; }
+.kau-ring .kau-ring-bg { stroke: #eef2f7; }
+.kau-ring .kau-ring-fg { stroke: #cbd5e1; stroke-linecap: round; transition: stroke-dashoffset .8s ease, stroke .3s; }
+.kau-ring > div { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1; }
+.kau-ring b { font-size: 24px; color: #0f172a; }
+.kau-ring-lg b { font-size: 36px; }
+.kau-ring small { font-size: 11px; color: var(--kau-muted); text-align: center; max-width: 80px; }
+.kau-ring.kau-good .kau-ring-fg { stroke: #22c55e; } .kau-ring.kau-good b { color: var(--kau-green); }
+.kau-ring.kau-mid .kau-ring-fg { stroke: #f59e0b; } .kau-ring.kau-mid b { color: var(--kau-amber); }
+.kau-ring.kau-bad .kau-ring-fg { stroke: #ef4444; } .kau-ring.kau-bad b { color: var(--kau-red); }
+.kau-hero-text { flex: 1; min-width: 260px; }
+.kau-hero-text h3 { margin: 0 0 6px; font-size: 20px; font-weight: 600; color: #0f172a; }
+.kau-time-hint { margin-left: 10px; font-size: 12px; }
+.kau-counters { display: flex; gap: 8px; margin: 10px 0 14px; flex-wrap: wrap; }
+.kau-counters span, .kau-block-counts span { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.kau-c-critical { background: #fee2e2; color: var(--kau-red); }
+.kau-c-warning { background: #fef3c7; color: var(--kau-amber); }
+.kau-c-info { background: #e0e7ff; color: var(--kau-blue); }
+
+/* Прогрес */
+.kau-progress-wrap { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--kau-line); }
+.kau-progress-head { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.kau-progress { height: 14px; border-radius: 10px; margin-bottom: 10px; }
+.kau-progress .progress-bar { background-color: var(--kau-accent); }
+.kau-phases { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--kau-muted); }
+.kau-phases .kau-ph-done { color: var(--kau-green); }
+.kau-phases .kau-ph-now { color: var(--kau-accent); font-weight: 600; }
+
+/* Вкладки */
+.kau-tabs { margin-bottom: 0; }
+.kau-tabs .badge { background: #f59e0b; }
+.kau-tabs .badge.kau-badge-red { background: var(--kau-red); }
+.kau-tabs .badge:empty { display: none; }
+.kau-tab-content { background: #fff; border: 1px solid #ddd; border-top: 0; padding: 20px; margin-bottom: 30px; min-height: 260px; }
+.kau-empty { text-align: center; color: var(--kau-muted); padding: 40px 10px; }
+.kau-empty .fa { color: #c7d2fe; margin-bottom: 10px; }
+.kau-lead { color: #475569; }
+.kau-h4 { margin: 22px 0 10px; font-size: 15px; font-weight: 600; }
+.kau-filter { margin-bottom: 12px; }
+.kau-filter .btn.active { background: var(--kau-accent); color: #fff; border-color: var(--kau-accent); }
+
+/* Огляд */
+.kau-blocks { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.kau-block { display: block; padding: 14px 16px; border: 1px solid var(--kau-line); border-radius: 12px; color: inherit; text-decoration: none !important; transition: .15s; }
+.kau-block:hover { border-color: #c7d2fe; background: #fafbff; color: inherit; }
+.kau-block-head { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; margin-bottom: 10px; }
+.kau-block-score { margin-left: auto; font-size: 20px; }
+.kau-block-score.kau-good { color: var(--kau-green); } .kau-block-score.kau-mid { color: var(--kau-amber); } .kau-block-score.kau-bad { color: var(--kau-red); }
+.kau-block-counts { display: flex; gap: 6px; flex-wrap: wrap; }
+.kau-allgood { padding: 16px; border-radius: 10px; background: #f0fdf4; color: var(--kau-green); font-weight: 600; margin: 14px 0; }
+.kau-checked ul { padding-left: 18px; color: #475569; }
+
+/* Знахідки */
+.kau-issue { border: 1px solid var(--kau-line); border-left-width: 4px; border-radius: 10px; margin-bottom: 8px; background: #fff; }
+.kau-issue.kau-critical { border-left-color: #ef4444; }
+.kau-issue.kau-warning { border-left-color: #f59e0b; }
+.kau-issue.kau-info { border-left-color: #818cf8; }
+.kau-issue.kau-is-ignored { opacity: .55; }
+.kau-issue-head { display: flex; align-items: center; gap: 12px; padding: 11px 14px; cursor: pointer; }
+.kau-issue-head:hover { background: #fafbff; }
+.kau-issue-title { flex: 1; min-width: 0; }
+.kau-target { font-size: 12.5px; margin-top: 2px; word-break: break-all; }
+.kau-chevron { color: #94a3b8; transition: transform .2s; }
+.kau-open .kau-chevron { transform: rotate(180deg); }
+.kau-issue-body { display: none; padding: 0 14px 14px 14px; border-top: 1px dashed var(--kau-line); }
+.kau-open .kau-issue-body { display: block; padding-top: 12px; }
+.kau-issue-body p { color: #334155; }
+.kau-fix { background: #f8fafc; border-radius: 8px; padding: 8px 10px; }
+.kau-issue-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.kau-level { flex: 0 0 auto; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .3px; padding: 3px 8px; border-radius: 6px; }
+.kau-level-critical { background: #fee2e2; color: var(--kau-red); }
+.kau-level-warning { background: #fef3c7; color: var(--kau-amber); }
+.kau-level-info { background: #e0e7ff; color: var(--kau-blue); }
+.kau-code { background: #0f172a; color: #e2e8f0; border-radius: 8px; padding: 8px 10px; margin: 8px 0; font-size: 12px; overflow-x: auto; }
+.kau-code code { background: none; color: inherit; padding: 0; white-space: pre-wrap; word-break: break-all; }
+.kau-code-line { display: block; color: #94a3b8; font-size: 11px; margin-bottom: 2px; }
+.kau-tag { display: inline-block; padding: 2px 8px; border-radius: 6px; background: #f1f5f9; font-size: 12px; margin: 2px; }
+.kau-tag-red { background: #fee2e2; color: var(--kau-red); }
+.kau-list { max-height: 220px; overflow: auto; padding-left: 18px; font-size: 12.5px; }
+.kau-soon-inline { font-size: 12px; color: var(--kau-accent); }
+
+/* Бокова панель */
+.kau-side-card { position: relative; background: #fff; border: 1px solid var(--kau-line); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.kau-side-card h4 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+.kau-side-card p { color: #475569; font-size: 13px; }
+.kau-side-pro { background: linear-gradient(135deg, #f5f3ff, #eef2ff); border-color: #c7d2fe; }
+.kau-side-help { border-color: #fecaca; background: #fff7f7; }
+.kau-pill { position: absolute; top: 12px; right: 12px; font-size: 10px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; background: var(--kau-accent); color: #fff; }
+.kau-soon { display: inline-block; font-size: 12px; font-weight: 600; color: var(--kau-accent); }
+.kau-disclaimer { font-size: 11.5px; }
+.kau-help h4 { margin-top: 20px; font-weight: 600; }
+.kau-help p, .kau-help li { color: #334155; }
+
+@media (max-width: 767px) {
+	.kau-hero { padding: 16px; }
+	.kau-ring-lg { width: 110px; height: 110px; }
+	.kau-ring { width: 82px; height: 82px; }
+}

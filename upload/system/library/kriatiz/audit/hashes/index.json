@@ -1,0 +1,58 @@
+{
+    "opencart-2.3.0.2": {
+        "version": "2.3.0.2",
+        "files": 1814
+    },
+    "opencart-3.0.2.0": {
+        "version": "3.0.2.0",
+        "files": 3144
+    },
+    "opencart-3.0.3.2": {
+        "version": "3.0.3.2",
+        "files": 3186
+    },
+    "opencart-3.0.3.6": {
+        "version": "3.0.3.6",
+        "files": 3275
+    },
+    "opencart-3.0.3.7": {
+        "version": "3.0.3.7",
+        "files": 3269
+    },
+    "opencart-3.0.3.8": {
+        "version": "3.0.3.8",
+        "files": 3274
+    },
+    "opencart-3.0.3.9": {
+        "version": "3.0.3.9",
+        "files": 2881
+    },
+    "opencart-3.0.4.0": {
+        "version": "3.0.4.0",
+        "files": 2899
+    },
+    "opencart-3.0.4.1": {
+        "version": "3.0.4.1",
+        "files": 2918
+    },
+    "ocstore-2.3.0.2": {
+        "version": "2.3.0.2",
+        "files": 1814
+    },
+    "ocstore-2.3.0.2.x": {
+        "version": "2.3.0.3_rc",
+        "files": 1825
+    },
+    "ocstore-3.0.2.0": {
+        "version": "3.0.2.0",
+        "files": 2804
+    },
+    "ocstore-3.0.3.7": {
+        "version": "3.0.3.7",
+        "files": 3143
+    },
+    "ocstore-3.0.4.1": {
+        "version": "3.0.4.1",
+        "files": 3838
+    }
+}
