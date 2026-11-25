@@ -51,6 +51,10 @@ docs/                                 original install guides in Ukrainian, Russ
 
 The audit finds known signs of hacking and configuration mistakes. It does not guarantee the absence of all malicious code and does not replace backups.
 
+## License
+
+[GPL-3.0](LICENSE) — the same license as OpenCart itself. You may use, modify and redistribute the module; modified versions must stay under GPL-3.0.
+
 ## Author and support
 
 Made by **Vladyslav Koshelyev — [KRIATIZ](https://kriatiz.com/en/services/opencart-development/)**, OpenCart and AI developer.
