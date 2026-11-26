@@ -4,6 +4,8 @@ Answers the question **“has my store already been hacked?”** in a few minute
 
 [Українською](docs/README-UA.txt) · [По-русски](docs/README-RU.txt) · [Full English guide](docs/README-EN.txt)
 
+[![OpenCart Marketplace](https://img.shields.io/badge/OpenCart%20Marketplace-free%20download-2b8bd3)](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50896)
+
 **Demo:** https://demoaudit.kriatiz.com/admin/ — login `demo`, password `demo` (read-only). The demo store contains safe test “infections” so you can see how they are detected.
 
 ## What it checks (7 stages, 1–5 minutes)
@@ -28,7 +30,7 @@ Answers the question **“has my store already been hacked?”** in a few minute
 
 ## Installation
 
-Download `kriatiz_audit.ocmod.zip` from the [latest release](../../releases/latest).
+Download `kriatiz_audit.ocmod.zip` from the [latest release](../../releases/latest) or from the [official OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50896).
 
 **OpenCart / ocStore 3.x**
 1. Admin → Extensions → Installer → upload `kriatiz_audit.ocmod.zip`.
@@ -60,5 +62,6 @@ The audit finds known signs of hacking and configuration mistakes. It does not g
 Made by **Vladyslav Koshelyev — [KRIATIZ](https://kriatiz.com/en/services/opencart-development/)**, OpenCart and AI developer.
 
 - Store already hacked, or need help with OpenCart? [OpenCart development, cleanup and SEO](https://kriatiz.com/en/services/opencart-development/)
+- Official OpenCart Marketplace page: [KRIATIZ Audit](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50896)
 - Support topic and other modules: [OpenCart Forum profile](https://opencartforum.com/profile/697033-gunner91/)
 - Multilingual SEO for OpenCart: [KRIATIZ Multilang SEO](https://opencartforum.com/en/files/file/9789-kriatiz-multilang-seo-%E2%80%94-language-urls-ru-en-hreflang-ukrainian-by-default/)
